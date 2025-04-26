@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block metadescription %}
+This is the shopping cart page. Proceed to review your items and place the order.
+{% endblock %}
+
+{% block title %}
+Cart - Perfect Cushion Store
+{% endblock %}
+
+{% block content %}
+{% if not cart_items %}
+<div class="empty-cart text-center py-5">
+    <i class="fas fa-shopping-cart fa-5x mb-4 text-muted"></i>
+    <h2 class="my_title">Your shopping cart is empty</h2>
+    <p class="lead">Start filling it with our lovely perfumes!</p>
+    <a href="{% url 'shop:all_products' %}" class="btn btn-primary mt-3">
+        <i class="fas fa-arrow-left mr-2"></i> Continue Shopping
+    </a>
+</div>
+{% else %}
+<div class="text-center">
+    <br>
+    <h1 class="my_title">Your Shopping Cart</h1>
+    <br>
+</div>
+
+<div class="row mx-auto">
+    <div class="col-12 col-md-6 text-center">
+        <table class="table my_custom_table">
+            <thead class="my_custom_thead">
+                <tr>
+                    <th colspan="5">Your Items</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cart_item in cart_items %}
+                <tr>
+                    <td>
+                        <div class="quantity-selector d-flex align-items-center">
+                            {% if cart_item.quantity < cart_item.product.stock %}
+                            <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="btn btn-sm btn-outline-secondary">+</a>
+                            {% endif %}
+                            <span class="mx-2">{{ cart_item.quantity }}</span>
+                            <a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="btn btn-sm btn-outline-secondary">-</a>
+                            <a href="{% url 'cart:full_remove' cart_item.product.id %}" class="btn btn-sm btn-outline-danger ml-2">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-12 col-md-6 text-center">
+        <table class="table my_custom_table">
+            <thead class="my_custom_thead">
+                <tr>
+                    <th>Checkout</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Please review your shopping cart items before proceeding with payment.</td>
+                </tr>
+
+                {% if voucher %}
+                <tr>
+                    <td>Total: €{{ total|floatformat:"2" }}</td>
+                </tr>
+                <tr>
+                    <td>Voucher "{{ voucher.code }}" ({{ voucher.discount }}% off)</td>
+                </tr>
+                <tr>
+                    <td>Discount: -€{{ discount|floatformat:"2" }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Grand Total: €{{ grand_total|floatformat:"2" }}</strong></td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td><strong>Total: €{{ total|floatformat:"2" }}</strong></td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+        <!-- Voucher Form -->
+        <div class="voucher-section bg-light p-3 rounded mb-4">
+            <h5><i class="fas fa-tag mr-2"></i> Apply Voucher</h5>
+            <form action="{% url 'vouchers:apply' %}" method="post" class="form-inline">
+                {% csrf_token %}
+                <div class="input-group w-100">
+                    {{ voucher_apply_form.code }}
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="submit">Apply</button>
+                    </div>
+                </div>
+            </form>
+            {% if voucher %}
+            <div class="alert alert-success mt-2">
+                Applied: <strong>{{ voucher.code }}</strong> ({{ voucher.discount }}% off)
+                <a href="{% url 'vouchers:remove' %}" class="float-right text-danger">
+                    <small>Remove</small>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Payment Form -->
+        <div class="payment-section mt-4">
+            <form action="{% url 'cart:cart_detail' %}" method="POST" id="payment-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="card-element">Credit or debit card</label>
+                    <div id="card-element" class="form-control p-2" style="height: 40px;"></div>
+                    <div id="card-errors" role="alert" class="text-danger mt-2"></div>
+                </div>
+                <button class="btn btn-success btn-block my_custom_button" type="submit">
+                    Pay €{{ total|floatformat:"2" }}
+                </button>
+            </form>
+            {% if error %}
+            <div class="alert alert-danger mt-3">
+                <i class="fas fa-exclamation-circle"></i> {{ error }}
+            </div>
+            {% endif %}
+        </div>
+
+        <a href="{% url 'shop:all_products' %}" class="btn btn-success btn-block my_custom_button mt-4">Continue Shopping</a>
+    </div>
+</div>
+<br>
+{% endif %}
+{% endblock %}
