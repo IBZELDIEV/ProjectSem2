@@ -1,0 +1,33 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% load crispy_forms_tags %} 
+{% block metadescription %} 
+Sign up to get a new account with us. The perfect nutrition website offers a variety of stunning and healthy recipes.
+{% endblock %} 
+{% block title %} 
+    Create a New Account - Perfect Nutrition Store 
+{% endblock %} 
+{% block content %}
+<div>
+  {% if not form.is_valid %}
+  <div class="mx-auto">
+    <br />
+    <h1 class="my_title text-center" style="color: wheat;">Create a new account</h1>
+    <br />
+    <div class="col-9 col-sm-9 col-md-6 col-lg-5 mx-auto bg-secondary" style="color: wheat;">
+      <br />
+      <p>Enter the following information to create a new account.</p>
+      <form method="post" style="color: wheat;">
+        <p>{{ form | crispy }}</p>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary" style="color: wheat;">
+          Register Account
+        </button>
+      </form>
+      <br />
+    </div>
+  </div>
+  {% endif %}
+</div>
+<br />
+{% endblock %}

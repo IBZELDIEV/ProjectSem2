@@ -1,0 +1,252 @@
+/****Navbar****/
+.nav-item {
+	letter-spacing: .2em;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.dropdown-item {
+	font-size: 14px;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+
+/****Footer****/
+
+	
+.my-footer {
+		background-color: dark;
+		color: white;
+	  }
+	  
+.my_footer p {
+	padding-top: 20px;
+	font-size: 14px;
+}
+/****Category page****/
+.my_row_class {
+	padding-top: 15px;
+}
+.my_row_class .mx-auto p {
+	color: white;
+	font-size: 12px;
+}
+.my_row_class .mx-auto p a {
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+}
+/****Category page****/
+.my_images {
+	width: 75%;
+	height:auto;
+	margin-left: 12%;
+}
+.my_title {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.my_image_padding {
+	padding-top: 5px;
+}
+.my_bottom_margin {
+	margin-bottom: 10px;
+}
+
+.card-body h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+/****Product Page****/
+.my_prod_row_class {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center; 
+}
+
+.my_prod_row_class .mx-auto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.my_prod_row_class .mx-auto p {
+    color: white;
+    font-size: 12px;
+}
+
+.my_prod_row_class .mx-auto p a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.my_prod_title {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.my_prod_text {
+    padding-right: 20px;
+}
+
+.centered-image {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
+}
+.centered-image {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+/****Signup & Login Page****/
+.errorlist li {
+	color: red;
+	font-weight: bold;
+}
+.my_custom_div {
+	margin-bottom: 20px !important;
+}
+
+
+.navigation {
+	margin: max-lenght;
+	background-color: #000;
+	height: 3em;
+
+}
+.body {
+    background-color: black;
+    color: white;
+}
+.custom-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0px;
+	background-color: dark;}
+
+.card {
+    background-color: black; 
+    border: 1px solid black; 
+	
+}
+
+.card-body {
+    background-color: black;}
+
+.product-name {
+    color: white; 
+}
+
+.product-price {
+    color: white; 
+}
+
+
+.card {
+    border-bottom: 5px solid #007bff; 
+}
+.content-container {
+    text-align: center; 
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.my_title {
+    margin-bottom: 20px; 
+}
+
+.my_image {
+    width: 70%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.text-justify {
+    text-align: justify;
+	margin-left: 250px; 
+    margin-right: 250px; 
+	padding-left: 20px; 
+	padding-right: 20px; 
+	text-align: justify;
+}
+
+.my_top_navbar_div {
+    height: 60px;
+    line-height: 50px;
+}
+    
+.my_custom_menu {
+    text-align: left !important;
+}
+    
+.my_custom_menu ul li {
+    list-style: none;
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+    padding-right: 20px;
+    display: inline;
+}
+    
+.my_custom_menu ul li a {
+    text-decoration: none;
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 12px;
+}
+    
+
+/****Cart Page****/
+.my_custom_table {
+    min-width: 400px;
+    font-size: 14px;
+}
+.my_custom_thead {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-color: #000!important;
+    
+}
+.custom_image {
+    width: 100px;
+    height: 100px;
+}
+    
+.custom_a {
+    text-decoration: none;
+}
+    
+.custom_icon {
+    text-decoration: none;
+    color: #868e96 !important;
+}
+.my_custom_button {
+    background-color: green !Important;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.Btitle{
+    color: goldenrod;
+    background-color: gold;
+}
+    
+
