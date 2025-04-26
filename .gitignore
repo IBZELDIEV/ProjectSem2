@@ -1,0 +1,17 @@
+# Ignore SQLite database files
+*.sqlite3
+
+# Ignore backup files
+*.bak
+*.swp
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Other unnecessary files
+*.log
