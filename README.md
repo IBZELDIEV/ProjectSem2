@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Ameer work :
 html : base , product, category, top-navbar, edit_profile , login, singup, user_profile, cart, order_detail, orders_list, thanks, search,header , some of css
 functions:Use of Django Admin, User authentication & authorisation, Custom User Model,User profile,Use of UUID,Use of static assets & images, Image Uploads, Search functionality, Implementation of shopping cart functionality that allows a customer to add items to a cart, remove items, empty the shopping cart, finalise an order and make payment, Use of the Django session framework to manage the
@@ -9,3 +10,6 @@ html, base,added products,added categories ,some CSS , profile edits ,some boots
 Functions: ,UUID (partial), database population, voucher codes, paginator, pythonanywhere deployment
 
 
+=======
+# ProjectSem2
+>>>>>>> f4ae041237ac955c87ec1ebac8df59fdceca09b9

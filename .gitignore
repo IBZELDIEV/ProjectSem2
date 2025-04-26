@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore SQLite database files
 *.sqlite3
 
@@ -15,3 +16,6 @@ env/
 
 # Other unnecessary files
 *.log
+=======
+env/
+>>>>>>> f4ae041237ac955c87ec1ebac8df59fdceca09b9
