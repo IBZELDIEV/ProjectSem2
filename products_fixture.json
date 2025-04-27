@@ -1,0 +1,598 @@
+[
+{
+  "model": "shop.product",
+  "pk": "04a6c273-9e3e-494f-9e08-4c0e22a316ad",
+  "fields": {
+    "name": "Giorgio Armani Acqua Di Gio Eau De Toilette",
+    "description": "This one is an aromatic aquatic fragrance for men that is iconic and very Italian. The scent is great for daily wear, is minimalist, modern, and pretty long lasting with a bright uplifting scent. All in all we'd recommend this as a gift.",
+    "price": "108.99",
+    "image": "product/649c309d4a32d7701e70c95f_1687957661284.jpg",
+    "stock": 25,
+    "available": true,
+    "created": "2024-12-01T16:24:59.319Z",
+    "updated": "2025-03-07T19:25:44.802Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "0520d489-3059-4306-9434-0099d6c5ac3f",
+  "fields": {
+    "name": "Sauvage Eau de Parfum",
+    "description": "Inspiration for the creation of Sauvage Eau de Parfum was taken from the desert in the magical hour of twilight: mixed with the coolness of the night, the burning desert air exudes profound scents.\r\n\r\nSauvage Eau de Parfum is thus the olfactory interpretation of a moment tinted with a thick blue that unleashes the wildest instincts. In the hour when the wolves come out and the sky is set ablaze, a new magic unfolds.",
+    "price": "60.00",
+    "image": "product/Y0785220_F078522009_E02_GHC_tX05fVy.webp",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T17:41:02.573Z",
+    "updated": "2025-03-07T19:09:54.344Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "0aa3c9bd-e70a-4ccb-8e51-6a6a5be0fcb0",
+  "fields": {
+    "name": "Burberry Hero",
+    "description": "Burberry Hero Eau de Parfum is like a cozy campfire in a bottle—warm, inviting, and just rugged enough. With hints of pine needles and cedarwood, it whispers, \"I chop my own wood,\" while the subtle sweetness says, \"But I moisturize after.\" Perfect for those who want to smell like an adventurous spirit with a soft side.",
+    "price": "161.00",
+    "image": "product/burberry-hero-eau-de-parfum-spray-420x420.jpeg",
+    "stock": 3,
+    "available": true,
+    "created": "2025-04-27T22:10:11.836Z",
+    "updated": "2025-04-27T22:13:31.397Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "0b10466f-dc45-4b8e-acba-4491e820f60d",
+  "fields": {
+    "name": "Romance Eau de Parfum",
+    "description": "This timeless essence of Romance begins with a luminous blend of mandarin, bright pink peppercorn and green crushed violet leaves.\r\n\r\nThe romantic heart of the fragrance blooms with the pureness and luxury of its Rose Damascena signature wrapped in a delicate veil of jasmine absolute and petals of marigold and geranium.\r\n\r\nEnding with an irresistible pairing of sensual, pure musk and velvety soft woods. A sensual, sparkling fresh floral eau de parfum for the woman who believes in romance.",
+    "price": "54.00",
+    "image": "product/ralph-lauren-fragrances-romance-eau-de-parfum-100ml-bottle-packshot.jpg",
+    "stock": 22,
+    "available": true,
+    "created": "2024-11-24T14:00:54.561Z",
+    "updated": "2025-03-07T19:37:40.593Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "175a0b48-c628-4fcb-b6d8-2d53b11809e7",
+  "fields": {
+    "name": "Jaguar Classic Black Eau de Toilette 100ml Spray",
+    "description": "Jaguar Classic Black Eau de Toilette 100ml Spray\r\n\r\nClassic Black by Jaguar is an oriental, woody and fresh fragrance for men.\r\n\r\nIt contains notes of mandarin, bitter orange, green apples, cardamom, black tea, geranium, sandalwood, cedar, moss, tonka, vetiver and musk.",
+    "price": "90.00",
+    "image": "product/67910_xl_5.jpg",
+    "stock": 20,
+    "available": true,
+    "created": "2024-12-01T17:30:00.892Z",
+    "updated": "2025-03-07T19:18:31.415Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "1d1ad964-b7ec-45dc-8521-c0aa28fce425",
+  "fields": {
+    "name": "Jean Paul Gaultier Le Male Eau de Toilette 75ml Spray",
+    "description": "Jean Paul Gaultier Le Male Eau de Toilette 75ml Spray\r\n\r\nLe Male by Jean Paul Gaultier is a fresh and aromatic fragrance for men.\r\n\r\nIt contains notes of mint, lavender, vanilla, bergamot, cinnamon, cumin, orange blossom, tonka bean, sandalwood and cedarwood. Jean Paul Gaultier Le Male was first launched in 1995. The scent is known for the unique bottle in the shape of a torso and the tin cans that often serve as the perfume's packaging.",
+    "price": "115.00",
+    "image": "product/85292_xl_5.jpg",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T17:48:15.384Z",
+    "updated": "2025-03-07T19:19:58.555Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "3296b428-6a0d-40e5-ba91-e8ee6f140d05",
+  "fields": {
+    "name": "Yves Saint Laurent Black Opium",
+    "description": "Regarded as the ‘rock ‘n’ roll’ rendition of the brand’s boundary-pushing original Opium scent, Black Opium will send your senses soaring with its addictive and energising composition. A few sprays of the beautifully contrasting notes of pink pepper, orange blossom, coffee and vanilla will give you all the confidence you need to charm your way through the velvet rope in any backstage area!",
+    "price": "75.00",
+    "image": "product/yves-saint-laurent-black-opium-eau-de-parfum-spray-172x172.jpg",
+    "stock": 29,
+    "available": true,
+    "created": "2024-11-24T13:55:28.207Z",
+    "updated": "2025-03-07T19:44:41.485Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "3914b304-ae55-4a2b-8052-0fb63cc55afa",
+  "fields": {
+    "name": "Calvin Klein Defy For Men Eau De Parfum 100ml",
+    "description": "Fresh. Courageous. Seductive. Calvin Klein Defy Eau de Parfum for Him is a provocative aftershave fragrance for the daring modern man.\r\n\r\nDefiant of boundaries and expectations, the premium CK scent builds upon the original signature woody base with an unexpected darker, warmer twist.\r\n\r\nOpening with crisp top notes of mandarin oil and black pepper, this Calvin Klein scent has an irresistible fresh burst.\r\n\r\nAddictive and intense, the heart of velvety smooth leather accord offers a deep contrast to the freshness of the top notes, incorporating saffiano and rich suede in a new, rugged way.\r\n\r\nThe base of vetiver oil – responsibly sourced from Haiti – anchors the vigour of this citrus perfume, adding strength, naturality and purpose to the aroma with a lasting masculine signature.\r\n\r\nEncapsulating the very essence of the Calvin Klein man, this uniquely rich Calvin Klein fragrance is housed in a unique bottle evoking denim and the iconic codes of CK’s iconic minimalism.\r\n\r\nThe opposing straight corners and round curves of the silhouette pair represent both sides of this defiant and confident man, vulnerability and courage, dueling components that join to tell a complex story.",
+    "price": "79.99",
+    "image": "product/3616302016648_2.webp",
+    "stock": 14,
+    "available": true,
+    "created": "2024-12-01T14:47:12.272Z",
+    "updated": "2025-04-27T10:29:29.437Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "3b7b5dd5-4f79-4c90-aebd-b13dfd322594",
+  "fields": {
+    "name": "Chanel Bleu De Chanel Parfum",
+    "description": "An ode to masculine freedom expressed in an aromatic-woody fragrance with a captivating trail. A timeless scent housed in a bottle of deep and mysterious blue. BLEU DE CHANEL Parfum is an accomplished composition with a pure, deep character. An intensely masculine signature that exudes self-confidence.",
+    "price": "160.00",
+    "image": "product/52915651850f1a235147b3dd1180eb79_460x2x.webp",
+    "stock": 18,
+    "available": true,
+    "created": "2025-04-27T22:30:32.435Z",
+    "updated": "2025-04-27T22:30:32.435Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "48860c22-b5b0-468c-9c0f-1b0b727f8fbe",
+  "fields": {
+    "name": "Perfumer's Choice No. 10 Mojo Eau de Parfum 83ml Spray",
+    "description": "Perfumer's Choice No. 10 Mojo Eau de Parfum 83ml Spray\r\n\r\nNo. 10 Mojo by Perfumer's Choice is an oriental, woody fragrance for men.\r\n\r\nIt contains notes of aromatic notes, rosewood, spicy notes, amber, sandalwood, vetiver and oud.",
+    "price": "40.00",
+    "image": "product/506443_500.webp",
+    "stock": 19,
+    "available": true,
+    "created": "2024-11-24T12:51:53.904Z",
+    "updated": "2025-03-07T19:22:40.666Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "53c296c3-1273-4f8d-97e5-b0a2ef582f73",
+  "fields": {
+    "name": "Alien by Thierry Mugler",
+    "description": "If you know a thing or two about fashion house Thierry Mugler, you’ll know that they like to stand out from the crowd! Their fragrances are a revelation; Alien bestows upon us an out of this world blend of warming, mysterious and comforting floral notes. The sensual amber fragrance is housed in a striking amethyst bottle which is also available as a refill, so you can top it up in our stores time and time again.",
+    "price": "99.99",
+    "image": "product/mugler-alien-eau-de-parfum-refillable-spray-172x172.jpg",
+    "stock": 19,
+    "available": true,
+    "created": "2024-12-01T13:44:46.788Z",
+    "updated": "2025-04-27T10:29:29.427Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "99d45abd-8dbb-4a49-a564-c33f28f5f4f6"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "5e890ca8-a25f-40d6-88ab-51dbb4b1ff1a",
+  "fields": {
+    "name": "CAROLINA HERRERA Good Girl Eau De Parfum",
+    "description": "The daring yet sophisticated fragrance combines sweet florals with rich amber accords. A heart of tuberose and jasmine sambac is elevated by vibrant notes of almond, while fragrant tonka bean and cocoa create an addictive scent trail.",
+    "price": "77.00",
+    "image": "product/11833694-1094606674383070.jpg",
+    "stock": 29,
+    "available": true,
+    "created": "2025-04-27T22:42:46.328Z",
+    "updated": "2025-04-27T22:42:46.329Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "99d45abd-8dbb-4a49-a564-c33f28f5f4f6"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "61b3393f-4e2a-41b7-9e40-fcade668a610",
+  "fields": {
+    "name": "Ralph Eau de Toilette",
+    "description": "A colorful floral fragrance that opens with an invigorating burst of sparkling fruity notes of green Apple and Mediterranean Tangerine, accented with a radiant purple Freesia note.\r\n\r\nPlayful floral accords of pink Magnolia, Linden Blossom and Osmanthus infuse the heart of the fragrance with a fun, young energy. White Iris and Musk reveaL a soft powdery finish.",
+    "price": "22.00",
+    "image": "product/ralph-lauren-fragrances-ralph-eau-de-toilette-pdp-product-carousel.jpg",
+    "stock": 19,
+    "available": true,
+    "created": "2024-11-24T14:03:32.196Z",
+    "updated": "2025-03-07T19:43:56.433Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "6b0a9824-1a09-4fc2-942b-d08079a87b8e",
+  "fields": {
+    "name": "Yves Saint Laurent Y Eau De Parfum",
+    "description": "From a super iconic brand, this one is a light and dark fougère fragrance, with fresh citrus and aromatic notes followed by a deeper intensity of sensual woods. We'd suggest this one for night wear since it is quite sensual and pretty long-lasting. We like to call this the 'Alex Turner' fragrance since it best represents the classic 90s men's look of a basic white shirt and a black jacket. It's classic, evergreen, and very masculine.",
+    "price": "61.00",
+    "image": "product/649c309d4a32d7701e70c95e_1687957661283.jpg",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T17:45:48.877Z",
+    "updated": "2025-03-07T19:25:02.082Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "6c4d8e35-8df9-4a8b-bae5-96cb04ffa2c3",
+  "fields": {
+    "name": "Armaf Club De Nuit Intense Eau de Toilette 105ml Spray",
+    "description": "Armaf Club De Nuit Intense Eau de Toilette 105ml Spray\r\n\r\nArmaf Club De Nuit Intense for men is a woody, spicy fragrance.\r\n\r\nClub De Nuit Intense has a citrusy opening with a burst of fresh lemon, black currant, apple, bergamot and pineapple. At the heart, the Armaf aftershave are floral accords with notes of rose, jasmine and birch, which settles into a wonderfully smoky and woody scent with vanilla, ambergris, musk and patchouli notes at the base.",
+    "price": "127.99",
+    "image": "product/140553_xl_5.jpg",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T14:44:20.957Z",
+    "updated": "2025-04-27T09:07:37.023Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "77840061-131c-459e-af1c-886965fe531d",
+  "fields": {
+    "name": "Armani Stronger with you",
+    "description": "Stronger With You exudes an unagitated charm and combines sensuality with strength. The spicy freshness of pink pepper, cardamom, and violet leaf opens the composition. Notes of spicy sage and warm chestnut unfold in the heart.",
+    "price": "90.00",
+    "image": "product/71N55FsrEjL._AC_UF8941000_QL80_.jpg",
+    "stock": 55,
+    "available": true,
+    "created": "2025-04-27T22:28:02.475Z",
+    "updated": "2025-04-27T22:28:02.475Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "7cca6613-7625-4c64-ad39-d402317ae255",
+  "fields": {
+    "name": "baccarat rouge 540 extrait de parfum",
+    "description": "Its very powerful perfume is bitter and slightly metallic, blowing hot and cold on the rest of the composition, with also a leathery, tarred facet. Francis Kurkdjian likes to use it in the top layer of a fragrance to break the sweetness of citrus notes. It is often associated with Oud-based perfumes and amber accords.",
+    "price": "355.00",
+    "image": "product/I-030120-A3-MaisonFrancisKurkdijan-BaccaratRouge540Extrait.webp",
+    "stock": 7,
+    "available": true,
+    "created": "2025-04-27T22:52:37.245Z",
+    "updated": "2025-04-27T22:52:37.245Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "99d45abd-8dbb-4a49-a564-c33f28f5f4f6"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "9764d09e-3b01-4aa7-9d50-720fc7cd3f00",
+  "fields": {
+    "name": "Paradise 30ml Perfume",
+    "description": "What's included?\r\n\r\n30ml Paradise Eau de Parfum\r\nWhat does it smell like?\r\n\r\nA light and fruity fragrance with opulent white florals and green notes.\r\n\r\nFragrance notes:\r\n\r\nTop: Apple, Lemon\r\nMiddle: Magnolia, Rose\r\nBase: Sandalwood, Musk",
+    "price": "30.00",
+    "image": "product/A20257s.webp",
+    "stock": 11,
+    "available": true,
+    "created": "2024-11-24T13:57:05.653Z",
+    "updated": "2025-03-07T19:41:06.378Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "9a922c86-dd78-4dbd-9593-4662ba7c8949",
+  "fields": {
+    "name": "Hugo Boss Man Eau De Toilette",
+    "description": "This has been an OG fragrance for those who love the subtle smokey woody aroma with a pinch of freshness. There's just something very comforting and unpretentious about this fragrance that strikes the right cord every time you spray it. If you have been looking for a sophisticated daily wear perfume that's pleasant yet discreet on the nose, your search ends right here!",
+    "price": "75.00",
+    "image": "product/649c309d4a32d7701e70c964_1687957661919.jpg",
+    "stock": 20,
+    "available": true,
+    "created": "2024-12-01T17:32:08.043Z",
+    "updated": "2025-03-07T19:33:31.710Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "a348a656-ddaa-4348-9799-dc4e0c2924cb",
+  "fields": {
+    "name": "Define 100ml Perfume",
+    "description": "Define 100ml Eau de Parfum.\r\n\r\nThe scent:\r\n\r\nClassic and opulent, amber accords create Define with warming cardamom and exotic jasmine and heliotrope encased by sweet vanilla, rich woods and crystal musk.\r\n\r\nFragrance notes:\r\n\r\nTop: Bergamot and Pear\r\nMid: Heliotrope and Lily\r\nBase: Musk and Sandalwood",
+    "price": "37.00",
+    "image": "product/U20832s.webp",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T18:04:21.152Z",
+    "updated": "2025-03-07T19:41:44.881Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "a9d9e674-ee48-4a8b-a384-25624e9df63c",
+  "fields": {
+    "name": "Dior sauvage elixir",
+    "description": "Sauvage Elixir is a Dior fragrance with a unique* and extreme concentration, like the quintessence of Sauvage. This fragrance for men unleashes an unexpected and surprising scent trail with notes of Grapefruit, Spices, organic AOP Lavender, and sweet, smooth Woods.",
+    "price": "180.00",
+    "image": "product/dior-sauvage-elixir-60ml_17257470_44567835_2048.webp",
+    "stock": 33,
+    "available": true,
+    "created": "2025-04-27T22:34:21.105Z",
+    "updated": "2025-04-27T22:34:21.105Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "bcca65f7-6725-4f8b-908f-32223b35b008",
+  "fields": {
+    "name": "Louis Vuitton Ombre Nomade",
+    "description": "Capturing the essence of warm, smoky, and woody aromas associated with the region. Ombre Nomade aims to transport the wearer to distant lands, evoking feelings of adventure, mystery, and opulence. It is designed to be more than just a scent; it is an olfactory journey that tells a story of wanderlust and exploration.",
+    "price": "375.00",
+    "image": "product/image-e0257923-b916-4b76-baf1-122cc8f224f6-_2.jpg",
+    "stock": 5,
+    "available": true,
+    "created": "2025-04-27T22:39:15.558Z",
+    "updated": "2025-04-27T22:39:15.558Z",
+    "is_sale": true,
+    "sale_price": "300.00",
+    "categories": [
+      "7c5afd99-303c-4e7f-8282-b36659f5d580"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "c07670ad-7d78-4b6c-b832-d0e9be5f8ed7",
+  "fields": {
+    "name": "Abercrombie & Fitch Fierce Eau de Cologne 200ml Spray",
+    "description": "Abercrombie & Fitch Fierce Eau de Cologne 200ml Spray\r\n\r\nFierce by Abercrombie & Fitch is a woody and aromatic fragrance for men.\r\n\r\nThis masculine aroma is built on fresh notes of the petitgrain, fir, cardamom, lemon, orange and aquatic notes of the sea that lead to a heart of sage, rosemary, jasmine, rose and lily-of-the-valley. The base concludes with a blend of rosewood, oakmoss, vetiver, sandalwood and musk.",
+    "price": "145.00",
+    "image": "product/178505_xl_5.jpg",
+    "stock": 7,
+    "available": true,
+    "created": "2024-11-24T13:00:16.014Z",
+    "updated": "2025-04-27T10:30:24.320Z",
+    "is_sale": true,
+    "sale_price": "99.99",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd",
+      "7c5afd99-303c-4e7f-8282-b36659f5d580"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "c3cffda3-8973-400d-a469-d3cb0673b313",
+  "fields": {
+    "name": "Coach Man Eau De Toilette",
+    "description": "A youthful yet versatile fragrance that's extremely likable, this one is for those who don't like experimenting much and enjoy sticking to fresh musky scents that are safe to play with. The woody scent opens with a fresh opening and is ideal for summertime. It lasts around 3-4 and might not be the best choice for people who don't like reapplying their perfumes during the day.",
+    "price": "80.40",
+    "image": "product/649c309d4a32d7701e70c962_1687957661772.jpg",
+    "stock": 14,
+    "available": true,
+    "created": "2024-12-01T17:50:53.685Z",
+    "updated": "2025-04-27T10:29:29.447Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "c621cb18-afb5-4e55-bc30-53df220fec94",
+  "fields": {
+    "name": "Armani stronger with you intensely",
+    "description": "STRONGER WITH YOU INTENSELY is an intense and addictive fougere ambery woody scent. The fragrance opens with a spicy pink pepper essence that combines with the iconic STRONGER WITH YOU chestnut accord, bringing warmth and originality to the fragrance.",
+    "price": "120.00",
+    "image": "product/77920129_o_a1.webp",
+    "stock": 39,
+    "available": true,
+    "created": "2025-04-27T22:22:49.776Z",
+    "updated": "2025-04-27T22:22:49.776Z",
+    "is_sale": true,
+    "sale_price": "90.00",
+    "categories": [
+      "7c5afd99-303c-4e7f-8282-b36659f5d580"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "cb78e15f-f7fb-4516-99a6-646b59bdea0d",
+  "fields": {
+    "name": "Absolu Aventus Eau de Parfum",
+    "description": "Step into the enchanting world of luxury with the limited edition Creed Absolu Aventus Eau de Parfum. This exquisite product is crafted for those who desire unique fragrances. An outstanding reimagining of the iconic Aventus, this aromatic masterpiece combines the exhilarating freshness of grapefruit and pineapple with layers of rich, smoky Haitian vetiver.\r\n\r\nInspired by the Latin word absolvere, meaning to set free, Absolu Aventus offers a unique fragrance journey that radiates confidence, energy and sophistication.\r\n\r\nBeloved by perfume connoisseurs and luxury tastemakers alike, this rare scent celebrates boldness and individuality. Generously spray on pulse points for a unique scent experience.",
+    "price": "129.99",
+    "image": "product/UK200053348_CREED_pavxVmo.jpg",
+    "stock": 14,
+    "available": true,
+    "created": "2024-12-01T18:03:07.584Z",
+    "updated": "2025-04-27T10:29:29.406Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "d053e44c-fd7f-4f16-8d07-d3fa7b10c17c",
+  "fields": {
+    "name": "La Vie Est Belle by Lancôme",
+    "description": "When a perfume is revised more than 5,000 times before it is deemed absolute by the nose behind the scent, you know you’re in the hands of a perfectionist! Which is exactly what you get with La Vie Este Belle by Lancôme. The sophisticated scent, which translates to ‘Life is Beautiful’, offers an olfactory floral explosion with notes of orange blossom, jasmine, and iris out to delight your senses! We’re sure you’ll agree, all the extra effort has certainly paid off!",
+    "price": "51.00",
+    "image": "product/lancome-la-vie-est-belle-eau-de-parfum-refillable-spray-172x172.jpg",
+    "stock": 20,
+    "available": true,
+    "created": "2024-12-01T17:29:20.520Z",
+    "updated": "2025-03-07T19:33:37.806Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "d1491530-8e1b-4156-a9ba-5acfd1f3c104",
+  "fields": {
+    "name": "Skinn By Titan Raw and Verge Nos Perfumes",
+    "description": "Skinn by Titan's perfume collection-for both men and women are fantastic especially when it comes to the price tag. They're affordable, but smell just as luxe making them perfect to wear everyday. The Raw and Verge variants for men are great everyday/night wear blends that come as miniatures and full bottle options. \r\n\r\nThe Raw is a French Eau De Parfum created by renowned Perfumer Olivier Pescheux. The fragrance draws it's inspiration from",
+    "price": "102.99",
+    "image": "product/649c309d4a32d7701e70c961_1687957661286.jpg",
+    "stock": 20,
+    "available": true,
+    "created": "2024-12-01T17:31:16.539Z",
+    "updated": "2025-03-07T19:27:08.843Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "d2a2dbca-512b-4303-a7b6-a0576729cb61",
+  "fields": {
+    "name": "Define 100ml Eau de Parfum.",
+    "description": "Define 100ml Eau de Parfum.\r\n\r\nThe scent:\r\n\r\nClassic and opulent, amber accords create Define with warming cardamom and exotic jasmine and heliotrope encased by sweet vanilla, rich woods and crystal musk.\r\n\r\nFragrance notes:\r\n\r\nTop: Bergamot and Pear\r\nMid: Heliotrope and Lily\r\nBase: Musk and Sandalwood",
+    "price": "50.00",
+    "image": "product/U20832s_Kdubr8n.webp",
+    "stock": 8,
+    "available": true,
+    "created": "2024-11-24T13:08:25.230Z",
+    "updated": "2025-03-07T19:42:24.344Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "d6f05771-1981-4d40-89eb-59bac1da6009",
+  "fields": {
+    "name": "Summer Sun 100ml Perfume",
+    "description": "The same iconic fragrance in a new refreshed look. The smell of Summer in an 100ml or 200ml bottle.\r\n\r\nWhat does it smell like?\r\n\r\nCoconut and exotic flowers combined with notes of sun-kissed skin.\r\n\r\nFragrance Notes:\r\n\r\n100ml or 200ml bottle\r\nTop: Mandarin, Bergamot\r\nHeart: Coconut, Exotic Flowers\r\nBase: Amber, Caramel",
+    "price": "100.00",
+    "image": "product/194944s.webp",
+    "stock": 15,
+    "available": true,
+    "created": "2024-11-24T13:59:28.054Z",
+    "updated": "2025-03-07T19:40:13.113Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "e31471be-09a6-4546-b9d5-40f5e2d4e6b6",
+  "fields": {
+    "name": "Gucci Guilty Parfum",
+    "description": "A cult classic, the Gucci #ForeverGuilty universe is home to some of the most worn and top rated men's fragrances around the world. If you are looking for a woody scent that's quite bold and speaks for itself, then this one's the perfect match for you! The Gucci website describes this fragrance as fit for those who don't play by the rules and we have to say, mischief is exactly what comes to our mind when we take a whiff of this charismatic fragrance.",
+    "price": "77.90",
+    "image": "product/649c309e4a32d7701e70c966_1687957662004.jpg",
+    "stock": 20,
+    "available": true,
+    "created": "2024-12-01T13:42:42.257Z",
+    "updated": "2025-03-07T19:29:52.234Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": []
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "e98bc126-8687-4187-9ad8-2e8d531e8c20",
+  "fields": {
+    "name": "VILLAIN HYDRA EAU DE PARFUM FOR MEN, 100ml",
+    "description": "When The Energies Of The Ocean Meet The Freshness Of Citrus, A Lethal Villain Is Born.  Get Ready For Action With The Strong, Masculine Fragrance Of Villain Hydra- Its Intense Aquatic Notes With Hints Of White Musk Keep You Ready For The Hustle, While The Zesty Fragrance Of Fresh Bergamot, Lemon And Patchouli Let Your Unpredictability And Excitement Shine. \r\n\r\nProud, Powerful And Unique, The Macho Scent Of Villain Hydra Is Made For The Rebel In You Who Knows How To Go Out Strong And Make It Last For Long.",
+    "price": "89.99",
+    "image": "product/VillainHydraListingImage_1080x1080_02.webp",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T14:50:51.747Z",
+    "updated": "2025-04-27T09:12:53.231Z",
+    "is_sale": false,
+    "sale_price": "0.00",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd",
+      "7c5afd99-303c-4e7f-8282-b36659f5d580"
+    ]
+  }
+},
+{
+  "model": "shop.product",
+  "pk": "fe980361-5a5c-49e7-bb85-f1345a311245",
+  "fields": {
+    "name": "Davidoff Cool Water Eau De Toilette for Men",
+    "description": "Davidoff's Cool Water is a cult favourite that belongs in every man's vanity. It is a scent that can be recognised from miles away, smells great on anyone who wears it, and is on the more affordable side of 'branded' perfumes. The perfume is fresh, rejuvenating, and mossy wood notes that have a crisp edge, featuring fresh citrus notes and a woody dry down. All in all, it is perfect for the summers.",
+    "price": "127.00",
+    "image": "product/649d40696d4aa0071752b587_1688027241604.jpg",
+    "stock": 15,
+    "available": true,
+    "created": "2024-12-01T17:46:39.939Z",
+    "updated": "2025-04-27T09:15:06.831Z",
+    "is_sale": true,
+    "sale_price": "99.99",
+    "categories": [
+      "98d587f3-dc4b-43a3-a526-9da682f203cd",
+      "7c5afd99-303c-4e7f-8282-b36659f5d580"
+    ]
+  }
+}
+]
