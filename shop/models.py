@@ -37,6 +37,10 @@ class Product(models.Model):
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True, blank = True, null= True)
     updated = models.DateTimeField(auto_now=True, blank = True, null= True)
+    
+ # Sale Stuff
+    is_sale = models.BooleanField(default=False)
+    sale_price = models.DecimalField(default=0, decimal_places=2, max_digits=6)
 
     class Meta:
         ordering = ('name',)

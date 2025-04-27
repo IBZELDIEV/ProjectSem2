@@ -1,71 +1,55 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}User Profile{% endblock title %}
+
 {% block content %}
+<div class="container my-5">
+    <div class="row">
+        <!-- Profile Sidebar -->
+        <div class="col-md-4">
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <img src="{% static 'images/default_user.png' %}" class="img-fluid rounded-circle mb-3" style="width: 120px;" alt="User Photo">
+                    <h4 class="card-title">{{ user.get_full_name|default:user.username }}</h4>
+                    <p class="text-muted">{{ user.email }}</p>
+                    <p><strong>Date of Birth:</strong> {{ user.profile.date_of_birth }}</p>
+                    <a href="{% url 'accounts:edit_profile' %}" class="btn btn-outline-primary btn-sm mt-2">Edit Profile</a>
+                    <a href="{% url 'accounts:change_password' %}" class="btn btn-outline-warning btn-sm mt-2">Change Password</a>
+                </div>
+            </div>
+        </div>
 
-<img src="/media/General img/3135715.png" alt="">
-Date Of Birth:{{ user.profile.date_of_birth }}
-<br/>
+        <!-- Profile Main Content -->
+        <div class="col-md-8">
+            <div class="card-group">
+                <!-- Orders Card -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Your Orders</h5>
+                        <p class="card-text">View all your past and current orders easily.</p>
+                        <a href="{% url 'order:order_history' %}" class="btn btn-outline-primary btn-sm">View Order History</a>
+                    </div>
+                </div>
 
-<div class="card-group">
+                <!-- Wishlist Placeholder -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Wishlist</h5>
+                        <p class="card-text">Manage your favorite items saved for later.</p>
+                        <a href="#" class="btn btn-outline-secondary btn-sm disabled">Coming Soon</a>
+                    </div>
+                </div>
 
-    <!-- Card 1 -->
-    
-    <div class="card">
-    
-    <div class="card-body">
-    
-    <h5 class="card-title text-warning"></h5>
-
-    <p class="card-text text-white"></p>
-    
+                <!-- Recent Activity Placeholder -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Recent Activity</h5>
+                        <p class="card-text">Check your latest browsing or purchase history.</p>
+                        <a href="#" class="btn btn-outline-secondary btn-sm disabled">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div class="card-footer">
-    
-    
-    </div>
-    
-    </div>
-    
-    <!-- Card 2 -->
-    
-    <div class="card">
-    
-    <div class="card-body">
-    
-    <h5 class="card-title text-warning"></h5>
-    
-    <p class="card-text text-white"></p>
-    
-    </div>
-    
-    <div class="card-footer">
-    
-    </div>
-    
-    </div>
-    
-    <!-- Card 3 -->
-    
-    <div class="card">
-        
-    <div class="card-body">
-    
-    <h5 class="card-title text-warning"></h5>
-    
-    <p class="card-text text-white"></p>
-    
-    </div>
-    
-    <div class="card-footer">
-    
-    </div>
-    
-    </div>
-    
-    </div> 
-
-
-
+</div>
 {% endblock content %}
-

@@ -1,78 +1,93 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block metadescription %}
     {% if category %}
         {{ category.description|truncatewords:155 }}
     {% else %}
-    Welcome to the perfume website where you can find healthy and delicious recipes.
+        Welcome to the perfume website where you can find healthy and delicious recipes.
     {% endif %}
 {% endblock %}
+
 {% block title %}
     {% if category %}
-        {{ category.name }} - Perfect Nutrition Store
+        {{ category.name }} - Perfect Perfume Store
     {% else %}
-        See Our perfume Collection - Perfect perfume  Store
+        See Our perfume Collection - Perfect Perfume Store
     {% endif %}
 {% endblock %}
+
 {% block content %}
-    <!--Breadcrumb navigation-->
+    <!-- Breadcrumb navigation -->
     {% if category %}
         <div class="row my_row_class">
             <div class="mx-auto">
-                <p><a href="{% url 'shop:all_products' %}">Our Product Collection</a> | {{category.name}}</p>
+                <p><a href="{% url 'shop:all_products' %}">Our Product Collection</a> | {{ category.name }}</p>
             </div>
         </div>
     {% endif %}
+
     <div class="mx-auto">
         {% if category %}
-            <img class="my_images"  src="{{category.image.url}}" alt="{{category.name}}">
+            <img class="my_images" src="{{ category.image.url }}" alt="{{ category.name }}">
         </div>
         <br>
         <div>
-            <h1 class="text-center my_title">{{category.name}}</h1>
-            <p class="text-justify">{{category.description}}</p>
+            <h1 class="text-center my_title">{{ category.name }}</h1>
+            <p class="text-justify">{{ category.description }}</p>
         </div>
-    {% else %}
-    <div class="centered-container">
-        <div class="content-container">
-            <img class="my_image" src="{% static 'images/banner2.jpg' %}" alt="Our Products Collection">
-            <h1 class="text-center my_title">Our Products Collection</h1>
-            <p class="text-justify">Welcome to Our World of Exquisite Products: Your One-Stop Destination for Premium Quality and Unmatched Variety. Explore Our Curated Selection, Featuring Everything from Luxurious Fragrances and Skincare Essentials to Fashion-Forward Accessories and Home Goods. Each Item Is Carefully Handpicked to Ensure the Highest Standards of Craftsmanship and Style, Allowing You to Discover Unique Pieces That Resonate with Your Personal Taste. Whether You're Looking to Indulge Yourself or Find the Perfect Gift, Our Collection Offers Something Special for Everyone. Experience the Joy of Shopping with Us and Elevate Your Everyday Life with Our Exceptional Range of Products.</p>
+        {% else %}
+        <div class="centered-container">
+            <div class="content-container">
+                <img class="my_image" src="{% static 'images/banner2.jpg' %}" alt="Our Products Collection">
+                <h1 class="text-center my_title">Our Products Collection</h1>
+                <p class="text-justify">
+                    Welcome to Our World of Exquisite Products: Your One-Stop Destination for Premium Quality and Unmatched Variety...
+                </p>
+            </div>
         </div>
-        
+        <br>
+        {% endif %}
     </div>
-    <br>
-    {% endif %}
+
+    <!-- Product Grid -->
     <div class="custom-container">
-        <div class="row mx-auto">
+        <div class="row justify-content-center">
             {% for product in prods %}
-                <div class="my_bottom_margin col-9 col-lg-3 col-sm-12 col-md-4">
-                    <div class="card text-center" style="min-width:18rem;">
-                        <a class="img" href="{{product.get_absolute_url}}">
-                            <img class="card-img-top my_image" src="{{product.image.url}}" alt="{{product.name}}">
-                        </a>
-                        <div class="card-body">
-                            <h4 class="product-name">{{product.name}}</h4>
-                            <p class="product-price">€{{product.price}}</p>
-                        </div>
+                <div class="card text-center position-relative">
+                    {% if product.is_sale %}
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    {% endif %}
+                    <a class="img" href="{{ product.get_absolute_url }}">
+                        <img class="my_images" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="product-name">{{ product.name }}</h4>
+                        {% if product.is_sale %}
+                            <p class="product-price">
+                                <span style="text-decoration: line-through;">€{{ product.price }}</span>
+                                &nbsp;
+                                <span style="color: red; font-weight: bold;">€{{ product.sale_price }}</span>
+                            </p>
+                        {% else %}
+                            <p class="product-price">€{{ product.price }}</p>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}
         </div>
+
+        <!-- Pagination -->
         <div class="mx-auto">
             {% if prods.paginator.num_pages > 1 %}
                 <hr>
                 <div class="text-center">
                     {% for pg in prods.paginator.page_range %}
-                        <a href="?page={{pg}}" class="btn btn-light
-btn-sm {%
-                        if products.number == pg %}active{% endif
-                        %}">{{pg}}</a>
+                        <a href="?page={{ pg }}" class="btn btn-light btn-sm {% if prods.number == pg %}active{% endif %}">{{ pg }}</a>
                     {% endfor %}
                 </div>
             {% endif %}
         </div>
         <br>
-    </div>   
+    </div>
 {% endblock %}
-

@@ -12,7 +12,7 @@ def prod_list(request, category_id=None):
     
     
     
-    paginator = Paginator(products, 12)
+    paginator = Paginator(products, 24)
     try:
         page = int(request.GET.get('page','1'))
     except:
