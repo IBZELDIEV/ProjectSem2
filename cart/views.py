@@ -88,8 +88,7 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
                 billing_address_collection='required',
                 shipping_address_collection={},
                 payment_intent_data={'description': description},
-                success_url=request.build_absolute_uri(reverse('cart:new_order'))+ f"?session_id={{CHECKOUT_SESSION_ID}}&voucher_id={voucher_id}&cart_total={
-                total}",
+                success_url=request.build_absolute_uri(reverse('cart:new_order')) + f"?session_id={CHECKOUT_SESSION_ID}&voucher_id={voucher_id}&cart_total={total}",
                 cancel_url=request.build_absolute_uri(reverse('cart:cart_detail')),
             )
             # Redirect to Stripe Checkout
