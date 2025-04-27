@@ -15,12 +15,12 @@ def setUp(self):
         )
         self.user.save()
 
-    def test_user_registration(self):
+def test_user_registration(self):
         response = self.client.post(self.register_url, {
             'username': 'newuser',
             'email': 'new@example.com',
             'password1': 'password123',
             'password2': 'password123',
-        })
+            })
         self.assertEqual(response.status_code, 302)  
         self.assertTrue(User.objects.filter(username='newuser').exists())

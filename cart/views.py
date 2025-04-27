@@ -34,7 +34,8 @@ def add_cart(request, product_id):
     except CartItem.DoesNotExist:
         cart_item = CartItem.objects.create(product=product, quantity=1, cart=cart)
     
-    return redirect('cart:cart_detail')
+    return redirect(request.META.get('HTTP_REFERER', 'shop:all_products'))
+
 
 def cart_detail(request, total=0, counter=0, cart_items=None):
     discount = 0

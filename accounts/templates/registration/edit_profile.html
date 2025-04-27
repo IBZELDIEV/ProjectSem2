@@ -1,21 +1,61 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
 {% block title %}Edit Profile{% endblock title %}
+
 {% block content %}
-{% if user.is_authenticated %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg p-4">
+                <div class="card-body">
+                    <h2 class="text-center text-primary mb-4">Edit Profile</h2>
 
+                    <form method="POST" enctype="multipart/form-data" novalidate>
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <hr>
+                        <h4 class="text-center text-warning">Profile Information</h4>
+                        {{ profile_form|crispy }}
 
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success" type="submit">Save Changes</button>
+                            <a href="{% url 'accounts:user_profile' %}" class="btn btn-outline-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-<h1 class="text-warning">Edit Profile</h1>
+            <!-- Delete Account Button -->
+            <div class="text-center mt-4">
+                <form method="POST" action="{% url 'accounts:delete_account' %}" onsubmit="return confirmDelete();">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-danger btn-sm">Deactivate Account</button>
+                </form>
+                
+                <script>
+                function confirmDelete() {
+                    return confirm('⚠️ Are you sure you want to deactivate your account? This action cannot be undone.');
+                }
+                </script>
+            </div>
 
-<br/>
-<div class="form-group">
-<form method="POST">
-{% csrf_token %}
-{{ form.as_p }}
-<input class="btn btn-success" type="submit" value="Update Profile">
-</form>
+            <!-- SUCCESS TOAST MESSAGE -->
+            {% if messages %}
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                {% for message in messages %}
+                <div class="toast align-items-center text-white bg-success border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            {{ message }}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
 </div>
-{% else %}
-You're not allowed here
-{% endif %}
-{% endblock content %}
+{% endblock %}

@@ -321,3 +321,30 @@ a:hover {
     font-size: 12px;
     color: goldenrod;
 }
+
+
+.custom_image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.custom_cart_image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.my_title {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: goldenrod;
+}
+.my_custom_button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+}
+.my_custom_button:hover {
+    background-color: #c49b0b;
+}

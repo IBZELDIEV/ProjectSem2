@@ -1,34 +1,44 @@
 {% extends "base.html" %}
 {% load static %}
-{% block metadescription %}
-    {{ product.description|truncatewords:155 }}
-{% endblock %}
+
 {% block title %}
     {{ product.name }} - Perfume Perfection Store
 {% endblock %}
+
 {% block content %}
-    <div class="row my_prod_row_class">
-        <div class="mx-auto text-center">
-            <p><a href="{% url 'shop:all_products' %}">Home</a> | <a href="{{product.category.get_absolute_url }}">{{product.category}}</a> | 
-            {{product.name}}</p>
-            <img src="{{product.image.url}}" 
-                 alt="{{product.name}}" class="centered-image">
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid rounded shadow" style="max-height: 400px;">
         </div>
-        <div class="container">
-            <br>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="my_prod_title">{{product.name}}</h1>
-                    <p>€{{product.price}}</p>
-                    <p class="my_title">Product Description</p>
-                    <p class="text-center my_prod_text">{{product.description}}</p>
-                    {% if product.stock == 0%}
-                        <p class="text-center my_prod_text"><b>Out of Stock</b></p>
-                    {% else %}
-                        <a class="btn btn-success " href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
-                    {% endif %}
-                </div>
-            </div>
+        <div class="col-md-8 text-center mt-4">
+            <h1 class="my_title">{{ product.name }}</h1>
+
+            <!-- SALE price logic -->
+            {% if product.is_sale %}
+                <h4>
+                    <span style="text-decoration: line-through; color: grey;">€{{ product.price }}</span>
+                    <span style="color: red; font-weight: bold;"> €{{ product.sale_price }}</span>
+                </h4>
+            {% else %}
+                <h4 class="text-success">€{{ product.price }}</h4>
+            {% endif %}
+
+            <hr class="my-4">
+
+            <h5 class="text-warning mb-3">PRODUCT DESCRIPTION</h5>
+            <p class="text-justify px-5">
+                {{ product.description }}
+            </p>
+
+            {% if product.stock > 0 %}
+                <a href="{% url 'cart:add_cart' product.id %}" class="btn btn-success btn-lg mt-3">
+                    <i class="fas fa-cart-plus"></i> Add to Cart
+                </a>
+            {% else %}
+                <p class="text-danger mt-3">Out of Stock</p>
+            {% endif %}
         </div>
     </div>
+</div>
 {% endblock %}
