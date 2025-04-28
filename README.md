@@ -6,3 +6,4 @@ html, base,added products,added categories ,some CSS , profile edits ,some boots
 Functions: ,UUID (partial), database population, voucher codes, paginator, mailhog
 
 
+mailhog: http://127.0.0.1:8025/
